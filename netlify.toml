@@ -1,4 +1,0 @@
-[build]
-  base = "subdirectory"
-  command = "yarn build"
-  publish = "netlify/dist"
