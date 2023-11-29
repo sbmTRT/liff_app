@@ -9,9 +9,9 @@ export default {
   methods: {
     async callFunction() {
       try {
-        const response = await fetch('/.netlify/functions/hello');
+        const response =  await fetch('/.netlify/functions/fastapi/get_data');
         const data = await response.json();
-        alert(data.message); // Show an alert message
+        alert(data.message);
       } catch (error) {
         console.error('Error calling function:', error);
       }
