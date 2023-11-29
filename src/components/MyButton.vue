@@ -12,7 +12,7 @@ export default {
       try {
         const response = await fetch('http://127.0.0.1:8000/getAll');
         const data = await response.json();
-        alert(`Response from server: ${JSON.stringify(data)}`);
+        alert(JSON.stringify(data));
       } catch (error) {
         console.error('Error calling FastAPI function:', error);
         alert('Error calling FastAPI function');
