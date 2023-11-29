@@ -9,7 +9,7 @@
       <code>{{ error }}</code>
     </p>
     <a href="https://developers.line.biz/ja/docs/liff/" target="_blank" rel="noreferrer">
-      LIFF Documentation TESTING for GIT
+      LIFF WWL APPS
     </a>
   </div>
 </template>
