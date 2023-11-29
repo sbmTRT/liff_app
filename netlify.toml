@@ -1,6 +1,0 @@
-[build]
-  command = "yarn build"  # Specify the build command
-  publish = "/opt/build/repo/dist"  # Specify the directory to publish
-
-# You can add other configuration options as needed
-# For example, environment variables, headers, redirects, etc.
