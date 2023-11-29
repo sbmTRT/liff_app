@@ -1,21 +1,20 @@
+<!-- App.vue -->
 <template>
-  <div>
-    <button @click="callFunction">Call Netlify Function</button>
+  <div id="app">
+    <MyButton />
   </div>
 </template>
 
 <script>
+import MyButton from './components/MyButton.vue';
+
 export default {
-  methods: {
-    async callFunction() {
-      try {
-        const response = await fetch('/.netlify/functions/fastapi/get_data');
-        const data = await response.json();
-        alert(data.message);s
-      } catch (error) {
-        console.error('Error calling function:', error);
-      }
-    },
-  },
-};
+  components: {
+    MyButton
+  }
+}
 </script>
+
+<style>
+/* Add your global styles here if needed */
+</style>
