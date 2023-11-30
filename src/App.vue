@@ -5,6 +5,7 @@
     <p v-if="diaplayname">{{ diaplayname }}</p>
     <p v-if="pictureurl">{{ pictureurl }}</p>
     <p v-if="statusmessage">{{ statusmessage }}</p>
+    <p v-if="token">{{ token }}</p>
     <p v-if="error">
       <code>{{ error }}</code>
     </p>
@@ -43,10 +44,12 @@ export default {
             const displayName = profile.displayName;
             const pictureUrl = profile.pictureUrl;
             const statusMessage = profile.statusMessage;
+            const accessToken = liff.getAccessToken();
             this.userid = 'User ID:'+ userId;
             this.diaplayname = 'User Name:'+ displayName;
             this.pictureurl = 'Picture url:'+ pictureUrl;
             this.statusmessage = 'Status Message:'+ statusMessage;
+            this.token = 'Token:'+ token;
             // this.client = "isInClient", liff.isInClient();
           }).catch((error) => {
             console.error('Error getting user profile', error);
