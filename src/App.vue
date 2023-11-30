@@ -50,7 +50,6 @@ export default {
             this.pictureurl = 'Picture url:'+ pictureUrl;
             this.statusmessage = 'Status Message:'+ statusMessage;
             this.token = 'Token:'+ accessToken;
-            alert(accessToken)
             // this.client = "isInClient", liff.isInClient();
           }).catch((error) => {
             console.error('Error getting user profile', error);
