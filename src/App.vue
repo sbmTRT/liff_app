@@ -1,11 +1,24 @@
 <template>
-  <div id="app">
+  <div id="app" class="wrapper">
     <Header />
-    <div v-if="currentView === 'home'">
-      <Home />
-    </div>
-    <div v-else-if="currentView === 'about'">
-      <About />
+    <div class="content-wrapper">
+      <!-- Content Header (Page header) -->
+      <section class="content-header">
+        <div class="container-fluid">
+          <div class="row mb-2">
+            <div class="col-sm-6">
+              <h1>Dashboard</h1>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Main content -->
+      <section class="content">
+        <div class="container-fluid">
+          <!-- Your dashboard content goes here -->
+        </div>
+      </section>
     </div>
     <Footer />
   </div>
@@ -34,5 +47,5 @@ export default {
 </script>
 
 <style>
-/* Global styles go here */
+@import url('https://cdn.jsdelivr.net/npm/admin-lte@3.0.5/dist/css/adminlte.min.css');
 </style>
