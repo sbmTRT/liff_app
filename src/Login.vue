@@ -24,11 +24,7 @@ export default {
     },
     methods: {
         submitForm() {
-            // You can add your logic here to handle the login submission
-            // For simplicity, let's show an alert with the entered username and password
-            alert('Username: ' + this.username + '\nPassword: ' + this.password);
-
-            // You may want to redirect or perform other actions based on the login information
+            this.$router.push({ name: 'main', query: { username: this.username, password: this.password } });
         }
     }
 };
